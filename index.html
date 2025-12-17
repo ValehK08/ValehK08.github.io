@@ -4,67 +4,100 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Valeh Kazimli — Portfolio</title>
+  <meta name="description" content="Valeh Kazimli — First-year CS student at ADA University. Projects: Logic Gates, Hour of AI outreach, ADABot. Interested in AI/ML and Math.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="name">Valeh Kazimli</h1>
-      <p class="tag">First-year CS student • ADA University • Azerbaijan</p>
-      <nav class="nav">
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar" id="avatar">VK</div>
+        <h1 class="name">Valeh Kazimli</h1>
+        <p class="role">First-year CS • ADA University</p>
+      </div>
+
+      <nav class="side-nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#links">Links</a>
         <a href="#contact">Contact</a>
       </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>Hi — I'm Valeh Kazimli, 17, from Imishli, Azerbaijan. I'm a first-year Computer Science student at ADA University. I'm passionate about math, AI, and machine learning. My goal is to become an AI/ML researcher.</p>
-    </section>
-
-    <section id="projects" class="card">
-      <h2>Selected Projects</h2>
-      <div class="project">
-        <h3>Project 1 — Logic Gates (SITE1101 lab)</h3>
-        <p>A lab project with my team building logic gate circuits for the SITE1101 course. Videos are on my YouTube channel.</p>
+      <div class="social">
+        <a href="https://github.com/ValehK08" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/valeh-kaz%C4%B1ml%C4%B1-7b3286397/" target="_blank">LinkedIn</a>
+        <a href="https://www.youtube.com/@Daemincael" target="_blank">YouTube</a>
       </div>
-      <div class="project">
-        <h3>Project 2 — Hour of AI / Hour of Code Outreach</h3>
-        <p>We traveled to Sumgayit to teach middle-school students in a "Bug Arena" Hour of Code event. Video on my channel.</p>
-      </div>
-      <div class="project">
-        <h3>ADABot</h3>
-        <p>An ongoing project hosted on GitHub. See the repository for source and instructions.</p>
-        <p><a href="https://github.com/ValehK08/ADABot" target="_blank" rel="noopener">GitHub — ADABot</a></p>
-      </div>
-    </section>
+    </aside>
 
-    <section id="links" class="card">
-      <h2>Links</h2>
-      <ul class="links">
-        <li><a href="https://www.codecademy.com/profiles/web7109647489" target="_blank" rel="noopener">Codecademy profile</a></li>
-        <li><a href="https://www.linkedin.com/in/valeh-kaz%C4%B1ml%C4%B1-7b3286397/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://www.youtube.com/@Daemincael" target="_blank" rel="noopener">YouTube channel (Daemincael)</a></li>
-        <li><a href="https://github.com/ValehK08" target="_blank" rel="noopener">GitHub — ValehK08</a></li>
-      </ul>
-    </section>
+    <main class="main">
+      <header class="hero">
+        <div>
+          <h2>Hello — I'm Valeh</h2>
+          <p class="lead">Computer Science student at ADA University. Interested in Math, AI, and Machine Learning. My goal is to become an AI/ML researcher.</p>
+          <p class="cta"><a class="btn" href="#projects">See projects</a> <a class="btn ghost" href="#contact">Contact me</a></p>
+        </div>
+      </header>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:8valehkazimli@gmail.com">8valehkazimli@gmail.com</a></p>
-      <p>Open to collaborations and research opportunities in AI/ML.</p>
-    </section>
-  </main>
+      <section id="about" class="section card">
+        <h3>About</h3>
+        <p>I'm 17, born in Imishli, Azerbaijan, and currently studying Computer Science at ADA University. I enjoy math and exploring AI/ML research topics. I build small bots and teach coding to younger students.</p>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© Valeh Kazimli — ADA University • Interested in AI, ML, and Math</small>
-    </div>
-  </footer>
+      <section id="projects" class="section">
+        <h3>Projects</h3>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h4>Logic Gates (SITE1101 lab)</h4>
+            <p>Team lab project building logic gate circuits for SITE1101. Video demos available on my YouTube channel.</p>
+            <p class="meta">Course lab • Team project</p>
+          </article>
+
+          <article class="project-card">
+            <h4>Hour of AI — Outreach</h4>
+            <p>Outreach in Sumgayit teaching middle-school students in a "Bug Arena" Hour of Code event. Session videos on my channel.</p>
+            <p class="meta">Outreach • Teaching</p>
+          </article>
+
+          <article class="project-card">
+            <h4>ADABot</h4>
+            <p>A bot project on GitHub. See the repository for source code and instructions.</p>
+            <p><a href="https://github.com/ValehK08/ADABot" target="_blank">GitHub — ADABot</a></p>
+            <p class="meta">Personal • Ongoing</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section card">
+        <h3>Interests & Skills</h3>
+        <ul class="skills">
+          <li>Mathematics</li>
+          <li>Python, Git</li>
+          <li>AI / Machine Learning (learning)</li>
+          <li>Teaching / Outreach</li>
+        </ul>
+      </section>
+
+      <section id="links" class="section card">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://www.codecademy.com/profiles/web7109647489" target="_blank">Codecademy profile</a></li>
+          <li><a href="https://www.linkedin.com/in/valeh-kaz%C4%B1ml%C4%B1-7b3286397/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/@Daemincael" target="_blank">YouTube (Daemincael)</a></li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section card">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:8valehkazimli@gmail.com">8valehkazimli@gmail.com</a></p>
+        <p>Open to research collaborations, internships, and mentorship opportunities in AI/ML.</p>
+      </section>
+
+      <footer class="foot">© Valeh Kazimli — ADA University</footer>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
