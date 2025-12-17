@@ -5,7 +5,9 @@ layout: default
 <section class="hero">
   <div class="hero-inner container">
     <div class="hero-left">
-      <img class="avatar" src="profile.jpg" alt="{{ site.author }}">
+       <div class="avatar-wrap">
+         <img class="avatar" src="{{ '/profile.jpg' | relative_url }}" alt="{{ site.author }}" onerror="this.onerror=null;this.src='{{ '/assets/images/profile.svg' | relative_url }}'">
+       </div>
     </div>
     <div class="hero-right">
       <h1>Hi — I'm {{ site.author }}</h1>
