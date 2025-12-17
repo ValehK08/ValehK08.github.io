@@ -4,7 +4,7 @@ title: Logic Gates — SITE1101 Lab Project
 permalink: /projects/site1101/
 ---
 
-![Logic Gates Demo]({{ '/assets/images/project1.svg' | relative_url }})
+![Logic Gates Demo]({{ '/assets/images/project1.jpg' | relative_url }})
 
 ## Logic Gates (SITE1101)
 

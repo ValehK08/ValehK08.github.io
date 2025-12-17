@@ -4,7 +4,7 @@ title: Hour of AI — Outreach in Sumgayit
 permalink: /projects/hour-of-ai/
 ---
 
-![Hour of AI]({{ '/assets/images/project2.svg' | relative_url }})
+![Hour of AI]({{ '/assets/images/project2.jpg' | relative_url }})
 
 ## Hour of AI — Outreach
 
