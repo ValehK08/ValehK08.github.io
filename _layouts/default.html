@@ -1,29 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <div class="container">
+          <a class="brand" href="{{ '/' | relative_url }}">{{ site.author }}</a>
+          <nav class="nav">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/about/' | relative_url }}">About</a>
+            <a href="{{ '/projects/' | relative_url }}">Projects</a>
+            <a href="{{ '/contact/' | relative_url }}">Contact</a>
+          </nav>
+        </div>
+      </header>
 
-<!--
-  Valeh's personal portfolio built on a customized theme
-  Modified and adapted by Valeh Kazimli
-  https://github.com/ValehK08/ValehK08.github.io
--->
+      <main class="container">{{ content }}</main>
 
-<html lang="en" class="h-100">
-
-{% include head.html %}
-
-<body class="h-100 d-flex flex-column">
-
-  <main class="flex-shrink-0 container mt-5">
-    {% include navbar.html %}
-    {{ content }}
-  </main>
-  {% include footer.html %}
-
-  {% include analytics.html %}
-  {% include scripts.html %}
-
-  {%- if site.buymeacoffee.enabled == true -%}
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="{{ site.buymeacoffee.username }}" data-description="{{ site.buymeacoffee.description }}" data-message="{{ site.buymeacoffee.message }}" data-color="{{ site.buymeacoffee.color }}" data-position="Right" data-x_margin="16" data-y_margin="16"></script>
-  {%- endif -%}
-</body>
-
+      <footer class="site-footer">
+        <div class="container">
+          <small>© {{ site.time | date: '%Y' }} {{ site.author }} — Built with Jekyll</small>
+          <div class="social">
+            {% if site.linkedin %}<a href="{{ site.linkedin }}">LinkedIn</a>{% endif %}
+            {% if site.codecademy %}<a href="{{ site.codecademy }}">Codecademy</a>{% endif %}
+            {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">GitHub</a>{% endif %}
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
